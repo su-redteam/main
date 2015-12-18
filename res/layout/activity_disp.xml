@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.lorenk.php_app1.DispActivity"
+    android:clickable="true">
+
+
+<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Floor 1:"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Floor 2:"
+        android:id="@+id/textView10"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Floor 3:"
+        android:id="@+id/textView11"
+        android:layout_below="@+id/textView10"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Floor 4:"
+        android:id="@+id/textView12"
+        android:layout_below="@+id/textView11"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Floor 5:"
+        android:id="@+id/textView13"
+        android:layout_below="@+id/textView12"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Floor 6:"
+        android:id="@+id/textView14"
+        android:layout_below="@+id/textView13"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="10dp"
+        android:id="@+id/onView1"
+        android:src="@drawable/greenbox"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="10dp"
+        android:id="@+id/offView1"
+        android:src="@drawable/redbox"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/onView1"
+        android:layout_toEndOf="@+id/onView1" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="10dp"
+        android:id="@+id/onView2"
+        android:src="@drawable/greenbox"
+        android:layout_alignTop="@+id/textView10"
+        android:layout_toRightOf="@+id/textView10"
+        android:layout_toEndOf="@+id/textView10" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="10dp"
+        android:id="@+id/onView3"
+        android:src="@drawable/greenbox"
+        android:layout_below="@+id/textView10"
+        android:layout_toRightOf="@+id/textView11"
+        android:layout_toEndOf="@+id/textView11" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="10dp"
+        android:id="@+id/onView4"
+        android:src="@drawable/greenbox"
+        android:layout_alignTop="@+id/textView12"
+        android:layout_toRightOf="@+id/textView12"
+        android:layout_toEndOf="@+id/textView12" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="10dp"
+        android:id="@+id/onView5"
+        android:src="@drawable/greenbox"
+        android:layout_below="@+id/textView12"
+        android:layout_toRightOf="@+id/textView12"
+        android:layout_toEndOf="@+id/textView12" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="10dp"
+        android:id="@+id/onView6"
+        android:src="@drawable/greenbox"
+        android:layout_below="@+id/textView13"
+        android:layout_toRightOf="@+id/textView14"
+        android:layout_toEndOf="@+id/textView14" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="10dp"
+        android:id="@+id/offView2"
+        android:src="@drawable/redbox"
+        android:layout_alignTop="@+id/onView2"
+        android:layout_alignLeft="@+id/offView1"
+        android:layout_alignStart="@+id/offView1" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="10dp"
+        android:id="@+id/offView3"
+        android:src="@drawable/redbox"
+        android:layout_alignTop="@+id/onView3"
+        android:layout_alignLeft="@+id/offView2"
+        android:layout_alignStart="@+id/offView2" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="10dp"
+        android:id="@+id/offView4"
+        android:src="@drawable/redbox"
+        android:layout_alignTop="@+id/onView4"
+        android:layout_alignLeft="@+id/offView3"
+        android:layout_alignStart="@+id/offView3" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="10dp"
+        android:id="@+id/offView5"
+        android:src="@drawable/redbox"
+        android:layout_alignTop="@+id/onView5"
+        android:layout_alignLeft="@+id/offView4"
+        android:layout_alignStart="@+id/offView4" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="10dp"
+        android:id="@+id/offView6"
+        android:src="@drawable/redbox"
+        android:layout_alignTop="@+id/onView6"
+        android:layout_alignLeft="@+id/offView5"
+        android:layout_alignStart="@+id/offView5" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fault 1"
+        android:id="@+id/button1"
+        android:layout_below="@+id/textView14"
+        android:layout_marginTop="37dp"
+        android:onClick="testFault1" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ON/OFF 1"
+        android:id="@+id/button2"
+        android:onClick="testSwitch1"
+        android:layout_alignBottom="@+id/button1"
+        android:layout_centerHorizontal="true" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fault 2"
+        android:onClick="testFault2"
+        android:id="@+id/button3"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ON/OFF 2"
+        android:onClick="testSwitch2"
+        android:id="@+id/button4"
+        android:layout_alignBottom="@+id/button3"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fault 3"
+        android:onClick="testFault3"
+        android:id="@+id/button5"
+        android:layout_below="@+id/button3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ON/OFF 3"
+        android:onClick="testSwitch3"
+        android:id="@+id/button6"
+        android:layout_below="@+id/button4"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fault 4"
+        android:onClick="testFault4"
+        android:id="@+id/button7"
+        android:layout_below="@+id/button5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ON/OFF 4"
+        android:onClick="testSwitch4"
+        android:id="@+id/button8"
+        android:layout_alignBottom="@+id/button7"
+        android:layout_alignLeft="@+id/button6"
+        android:layout_alignStart="@+id/button6" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fault 5"
+        android:onClick="testFault5"
+        android:id="@+id/button9"
+        android:layout_below="@+id/button7"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ON/OFF 5"
+        android:onClick="testSwitch5"
+        android:id="@+id/button10"
+        android:layout_alignBottom="@+id/button9"
+        android:layout_alignLeft="@+id/button8"
+        android:layout_alignStart="@+id/button8" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fault 6"
+        android:onClick="testFault6"
+        android:id="@+id/button11"
+        android:layout_below="@+id/button9"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ON/OFF 6"
+        android:onClick="testSwitch6"
+        android:id="@+id/button12"
+        android:layout_alignBottom="@+id/button11"
+        android:layout_alignLeft="@+id/button10"
+        android:layout_alignStart="@+id/button10" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="10dp"
+        android:id="@+id/faultView1"
+        android:src="@drawable/grbox"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/offView1"
+        android:layout_toEndOf="@+id/offView1" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="10dp"
+        android:id="@+id/faultView2"
+        android:src="@drawable/grbox"
+        android:layout_alignTop="@+id/offView2"
+        android:layout_toRightOf="@+id/offView2"
+        android:layout_toEndOf="@+id/offView2" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="10dp"
+        android:id="@+id/faultView3"
+        android:src="@drawable/grbox"
+        android:layout_alignTop="@+id/offView3"
+        android:layout_toRightOf="@+id/offView3"
+        android:layout_toEndOf="@+id/offView3" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="10dp"
+        android:id="@+id/faultView4"
+        android:src="@drawable/grbox"
+        android:layout_alignTop="@+id/offView4"
+        android:layout_toRightOf="@+id/offView4"
+        android:layout_toEndOf="@+id/offView4" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="10dp"
+        android:id="@+id/faultView5"
+        android:src="@drawable/grbox"
+        android:layout_alignTop="@+id/offView5"
+        android:layout_toRightOf="@+id/offView5"
+        android:layout_toEndOf="@+id/offView5" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="10dp"
+        android:id="@+id/faultView6"
+        android:src="@drawable/grbox"
+        android:layout_alignTop="@+id/offView6"
+        android:layout_toRightOf="@+id/offView6"
+        android:layout_toEndOf="@+id/offView6" />
+
+    <ImageSwitcher
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageSwitcher"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/onView1"
+        android:layout_toEndOf="@+id/onView1" />
+
+
+</RelativeLayout>
